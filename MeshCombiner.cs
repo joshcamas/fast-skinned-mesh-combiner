@@ -13,8 +13,8 @@ namespace SpellcastStudios
     /// <param name="material"></param>
     /// <param name="bones"></param>
     /// <param name="meshes"></param>
-    /// <param name="rects"></param>
-    /// <returns>Optional UV's to apply to each mesh</returns>
+    /// <param name="rects">Optional UV's to apply to each mesh</param>
+    /// <returns></returns>
     public static SkinnedMeshRenderer CombineFast(Transform baseBone, Material material, Transform[] bones, Mesh[] meshes, Rect[] rects = null)
     {
         // Create mesh renderer
