@@ -1,5 +1,5 @@
 # fast-skinned-mesh-combiner
-A much faster implementation of combining skinned meshes without messing with skinned mesh prefabs
+A much faster implementation of combining skinned meshes in Unity without messing with skinned mesh prefabs.
 
 This is a MUCH better implementation of an older script I made: https://github.com/joshcamas/skinned-mesh-combiner
 
