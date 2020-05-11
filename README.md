@@ -7,11 +7,28 @@ Most skinned mesh combiners require actual SkinnedMeshComponents to base the dat
 
 This solution skips this issue - simply create a single rig, then give it a bunch of meshe datas - it then spits out a single SkinnedMeshComponent.
 
-## Features ##
+### Features
 - Quite fast!
 - Bone Weights (supports 1 frame)
 - Optionally can apply UV's as it goes - this can be used if you're generating an atlas beforehand
 
-## Limitations ##
+### Limitations
 - Single material
 - All meshes must have the same bone weights
+
+### Usage
+
+```c#
+
+//Create Rig (Often from an FBX)
+GameObject rig = GameObject.Instantiate(myRig);
+
+//Find the "packed" renderer, which has bone info
+SkinnedMeshRenderer rigRenderer = rig.GetComponentInChildren<SkinnedMeshRenderer>();
+Transform[] bones = rigRenderer.bones
+Transform rootBone = rigRenderer.rootBone;
+
+//Pack! (In this case, by overwriting the already existing renderer found on the rig)
+SpellcastStudios.MeshCombiner.CombineFast(rigRenderer,rootBone,material,bones,meshes);
+
+```
