@@ -32,3 +32,7 @@ Transform rootBone = rigRenderer.rootBone;
 SpellcastStudios.MeshCombiner.CombineFast(rigRenderer,rootBone,material,bones,meshes);
 
 ```
+
+### Todo
+- Remove odd implementation of rootBone
+- Show how Atlas can be used
