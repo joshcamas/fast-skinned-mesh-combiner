@@ -7,6 +7,11 @@ Most skinned mesh combiners require actual SkinnedMeshComponents to base the dat
 
 This solution skips this issue - simply create a single rig, then give it a bunch of meshe datas - it then spits out a single SkinnedMeshComponent.
 
+## Features ##
+- Quite fast!
+- Bone Weights (supports 1 frame)
+- Optionally can apply UV's as it goes - this can be used if you're generating an atlas beforehand
+
 ## Limitations ##
 - Single material
 - All meshes must have the same bone weights
