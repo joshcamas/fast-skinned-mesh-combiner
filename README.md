@@ -9,7 +9,7 @@ This solution skips this issue - simply create a single rig, then give it a bunc
 
 ### Features
 - Quite fast!
-- Bone Weights (supports 1 frame)
+- Shape Keys (supports 1 frame)
 - Optionally can apply UV's as it goes - this can be used if you're generating an atlas beforehand
 
 ### Limitations
