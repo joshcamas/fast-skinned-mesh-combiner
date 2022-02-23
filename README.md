@@ -15,6 +15,8 @@ This solution skips this issue - simply create a single rig, then give it a bunc
 ### Limitations
 - Single material
 - All meshes must have the same bone weights
+- Still slow due to unity shenanigans - specifically AddBlendShapeFrame is ridiculously slow, costing up to 1ms per call
+- All done on a single frame. On my personal version I've modified this to take multiple frames when desired, making it much less destructive to your main thread. If anyone wants this version, please make a issue for it, and I can upload it. :)
 
 ### Usage
 
